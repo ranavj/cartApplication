@@ -1,0 +1,216 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+.container{
+    max-width: 1180px;
+    margin: auto;
+    padding: 3%;
+}
+
+.example-card {
+    max-width: 250px;
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .mat-app-background{
+    background-color: #fafafa;
+    color: rgba(0,0,0,.87);
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    justify-content: space-evenly;
+  }
+
+  .mat-card-image {
+    width: calc(100% - 50px);
+    margin: 20px 25px 20px 25px!important;
+}
+
+
+.mat-card-actions{
+    margin: 0;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+}
+
+.add-button{
+    color: blue;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mat-card-content{
+    margin-bottom: 0;
+}
+
+.discount{
+    position: absolute;
+    top: 20px;
+    color: #fff;
+    background-color: #26d326;
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: normal;
+}
+.discount label{
+    font-size:14px;
+}
+
+.mat-card-title{
+    margin-bottom: 0;
+}
+
+.item-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    box-sizing: unset;
+    padding: 0 15px;
+    box-shadow: none;
+    font-size: 14px;
+}
+.item-header p{
+    font-size: 20px;
+}
+.go-cart-btn{
+    color: #fff;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.go-cart-btn .mat-badge-content{
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #222;
+    color: #222;
+}
+
+.add-popup, .panelClass{
+    background-color: #26d326;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.order-list-container{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+.order-calculation{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+.order-container{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px 0px;
+    background-color: #fff;
+}
+.order-container div{
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-container div:last-child{
+    background-color: #fafafa;
+}
+.order-container div span:first-child{
+    flex-basis: 70%;
+    position: relative;
+}
+.dot::after{
+    content: ":";
+    position: absolute;
+    right: 0;
+}
+
+.order-items{
+    display: flex;
+    flex-basis: 70%;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 10px 20px;
+}
+
+.order-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+.order-list:first-of-type{
+    padding: 20px 15px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+.order-list div:first-child{
+    flex-basis: 50%;
+    align-items: center;
+    display: flex;
+}
+.item-img-name{
+    display: flex;
+    box-shadow: 0px 0px 2px 0px;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: flex-end;
+}
+.item-inc-dec{
+    display: flex;
+    align-items: baseline;
+}
+.item-inc-dec span:nth-of-type(2){
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+.item-inc-dec span:first-child,
+.item-inc-dec span:last-child{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.item-img-name span{
+    padding-left: 10px;
+}
+
+.remove{
+    cursor: pointer;
+}
+
+.back-click{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mat-snack-bar-container{
+    background-color: #26d326;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    text-align: center;
+
+}

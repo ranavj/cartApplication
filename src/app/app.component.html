@@ -1,0 +1,38 @@
+<!-- <mat-card-title class="item-header mat-card" mat-title>
+  <div>
+    <p>All Items</p>
+  </div>
+  <div>
+    <p class="add-popup">
+      Items2 is added to cart
+    </p>
+  </div>
+  <div>
+    <p>
+      <button mat-raised-button color="primary" 
+        class="go-cart-btn"
+        matBadge="{{orderSummary.parseOrderSummary.length}}" matBadgePosition="after" >
+        Go to Cart
+     </button>
+    </p>
+  </div>
+</mat-card-title>
+<div class="mat-app-background basic-container">
+  <ng-container *ngFor="let item of storeItems">
+      <mat-card class="example-card">
+           <div class="discount" *ngIf="item.discount">
+             <label >{{item.discount}}% off</label>
+           </div> 
+          <img mat-card-image src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTZlNGM2ZDhlNDcgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNmU0YzZkOGU0NyI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTE1NjI1IiB5PSIxMDUuMSI+MjQyeDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" alt="{{item.type}}">
+          <mat-card-actions>
+            <mat-card-content>
+              <p>{{item.name}}</p>
+              <p><del *ngIf="item.discount">${{ item.price }}</del> <strong style="padding-left: 10px;">${{ orderSummary.getDiscountValue(item) }}</strong></p>
+            </mat-card-content>
+            <button mat-button class="add-button" (click)="addToCart(item)">Add to cart</button>
+          </mat-card-actions>
+        </mat-card>
+  </ng-container>
+</div> -->
+
+<router-outlet></router-outlet>
